@@ -8,9 +8,9 @@ The ARG parameter is used via the `--build-arg arg=value` syntax on the docker b
 
 With a dockerfile like:
 
-`ARG image
+ARG image
 FROM ${image}
-EXPOSE 80`
+EXPOSE 80
 
 The following command line:
 
@@ -22,11 +22,11 @@ ARG statements can also be used to parameterize other statements in the dockerfi
 
 With a dockerfile like:
 
-`ARG image
+ARG image
 FROM ${image}
 EXPOSE 80
 ARG tag
-COPY ${tag}.txt \.`
+COPY ${tag}.txt \.
 
 The following command line:
 
